@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    English language stemming
 License:    GPL+ or Artistic
@@ -50,8 +50,8 @@ rm -rf %buildroot
 %files
 %defattr(-,root,root)
 %doc ChangeLog META.yml README
+%{_bindir}/perlindex
+%{_mandir}/man1/*
 %{_mandir}/man3/*
 %perl_vendorlib/*
-/usr/bin/perlindex
-/usr/share/man/man1/perlindex.1.lzma
 
