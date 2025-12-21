@@ -15,6 +15,7 @@ Source0:    http://www.cpan.org/modules/by-module/Text/%{upstream_name}-%{upstre
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
+BuildRequires:	make
 %description
 This routine applies the Porter Stemming Algorithm to its parameters,
 returning the stemmed words. It is derived from the C program "stemmer.c"
